@@ -17,7 +17,7 @@
 	<script type="text/javascript">
 		var gameW = 700, gameH = 700;
 		var canvas, context;
-		var cursorX, cursorY;
+		var curX, curY;
 		var field = [[90,90],[200,100],[100,200],[310,50]];
 		var edges = [[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]];
 		var selectedCircle;
@@ -69,7 +69,7 @@
 			{
 				context.clearRect(0,0,gameW,gameH);
 				var x, y;
-				var c0, c1;
+				var t0, t1;
 
 				/* рисуем линии */
 				context.lineWidth = 2;
